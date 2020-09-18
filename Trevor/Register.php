@@ -1,5 +1,10 @@
 <?php
     //echo $_POST["Username"]."<br>".$_POST["Password"]."<br>";
+    if(!isset($_POST["Username"]) || trim($_POST["Username"]) == '')
+    {
+        setcookie("InvalidUsername", "true");
+        header('Location: Register.html');
+    }
 
     $servername = "sql9.freesqldatabase.com";
     $username = "sql9365852";
@@ -17,12 +22,9 @@
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-      // output data of each row
-      // while($row = $result->fetch_assoc()) {
-      //   echo "id: " . $row["UserName"]. "<br>";
-      // }
-      echo "User Already Exists!<br>";
+        setcookie("InvalidUsername", "true");
     } else {
+        setcookie("InvalidUsername", "false");
         $sql = "INSERT INTO Users (UserName, Password) VALUES ('".$_POST["Username"]."', '".$_POST["Password"]."')";
 
         if ($conn->query($sql) === TRUE) {
@@ -37,6 +39,6 @@
     setcookie("Username", $_POST["Username"]);
     setcookie("Password", $_POST["Password"]);
 
-
+    header('Location: Register.html');
 
 ?>

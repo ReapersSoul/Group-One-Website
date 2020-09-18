@@ -8,18 +8,32 @@
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="Login.css">
     </head>
+    <header>
+        <nav class="row header">
+            <a href="../Index.html">Home</a>
+            <a href="Login.html">Login</a>
+            <a href="Register.html">Register</a>
+        </nav>
+    </header>
     <body>
+        <div class="row">
+            <div class="col">
+                <div id="invalid" class="Invalid"></div>
+                <form class="" action="Login.php" method="post">
+                    <label for="Username">Username:</label><br>
+                    <input type="text" name="Username" ><br>
+                    <label for="Password">Password:</label><br>
+                    <input type="password" name="Password" value=""><br>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    </body>
+    <footer>
         <script type="text/javascript">
             if (getCookie("InvalidLogin")=="true") {
-                $('body').prepend('Invalid Login!')
+                $('#invalid').append('Invalid Login!')
             }
         </script>
-        <form class="" action="Login.php" method="post">
-            <label for="Username">Username:</label><br>
-            <input type="text" name="Username" ><br>
-            <label for="Password">Password:</label><br>
-            <input type="password" name="Password" value=""><br>
-            <input type="submit" value="Login">
-        </form>
-    </body>
+    </footer>
 </html>

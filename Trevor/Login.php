@@ -13,7 +13,7 @@
       die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT * FROM Users WHERE UserName='".$_POST["Username"]."'";
+    $sql = mysqli_real_escape_string ($conn, "SELECT * FROM Users WHERE UserName='".$_POST["Username"]."'");
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {

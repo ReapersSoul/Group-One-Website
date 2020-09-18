@@ -3,16 +3,37 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="Login.js"></script>
         <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="Register.css">
+        <link rel="stylesheet" href="Login.css">
     </head>
+    <header>
+        <nav class="row header">
+            <a href="../Index.html">Home</a>
+            <a href="Login.html">Login</a>
+            <a href="Register.html">Register</a>
+        </nav>
+    </header>
     <body>
-        <form class="" action="Register.php" method="post">
-            <label for="Username">Username:</label><br>
-            <input type="text" name="Username" ><br>
-            <label for="Password">Password:</label><br>
-            <input type="password" name="Password" value=""><br>
-            <input type="submit" value="Register">
-        </form>
+        <div class="row">
+            <div class="col">
+                <div id="invalid" class="Invalid"></div>
+                <form class="" action="Register.php" method="post">
+                    <label for="Username">Username:</label><br>
+                    <input type="text" name="Username" ><br>
+                    <label for="Password">Password:</label><br>
+                    <input type="password" name="Password" value=""><br>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
     </body>
+    <footer>
+        <script type="text/javascript">
+            if (getCookie("InvalidUsername")=="true") {
+                $('#invalid').append('Invalid Username or Password!')
+            }
+        </script>
+    </footer>
 </html>
