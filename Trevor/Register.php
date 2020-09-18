@@ -2,7 +2,7 @@
     //echo $_POST["Username"]."<br>".$_POST["Password"]."<br>";
     if(!isset($_POST["Username"]) || trim($_POST["Username"]) == '')
     {
-        setcookie("InvalidUsername", "true");
+        setcookie("InvalidUsername", "true",time() + (3600/4));
         header('Location: Register.html');
     }
 
@@ -22,9 +22,9 @@
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        setcookie("InvalidUsername", "true");
+        setcookie("InvalidUsername", "true",time() + (3600/4));
     } else {
-        setcookie("InvalidUsername", "false");
+        setcookie("InvalidUsername", "false",time() + (3600/4));
         $sql = "INSERT INTO Users (UserName, Password) VALUES ('".$_POST["Username"]."', '".$_POST["Password"]."')";
 
         if ($conn->query($sql) === TRUE) {
@@ -36,8 +36,8 @@
 
     $conn->close();
 
-    setcookie("Username", $_POST["Username"]);
-    setcookie("Password", $_POST["Password"]);
+    setcookie("Username", $_POST["Username"],time() + 3600);
+    setcookie("Password", $_POST["Password"],time() + 3600);
 
     header('Location: Register.html');
 

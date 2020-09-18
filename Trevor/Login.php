@@ -21,13 +21,13 @@
       while($row = $result->fetch_assoc()) {
         if($row["UserName"]==$_POST["Username"] && $row["Password"]==$_POST["Password"]){
             //echo "id: " . $row["UserName"]. "<br>";
-            setcookie("Username", $_POST["Username"]);
-            setcookie("Password", $_POST["Password"]);
-            setcookie("InvalidLogin", "false");
+            setcookie("Username", $_POST["Username"],time() + 3600);
+            setcookie("Password", $_POST["Password"],time() + 3600);
+            setcookie("InvalidLogin", "false",time() + (3600/4));
         }
       }
     } else {
-        setcookie("InvalidLogin", "true");
+        setcookie("InvalidLogin", "true",time() + (3600/4));
     }
 
     $conn->close();
