@@ -9,10 +9,11 @@
     <header>
         <div class="row header">
             <div href="../Index.html" class="title">Shop Name.</div>
-            <nav class="row">
+            <nav class="row" id="navbar">
                 <a href="../Index.html" class="link">Home</a>
                 <a href="Login.html" class="link">Login</a>
                 <a href="Register.html" class="link">Register</a>
+
             </nav>
         </div>
     </header>
@@ -35,7 +36,12 @@
                 <script src="Login.js"></script>
         <script type="text/javascript">
             if (getCookie("InvalidLogin")=="true") {
-                $('#invalid').append('Invalid Login!')
+                $('#invalid').append('Invalid Login!');
+                setCookie("InvalidLogin","");
+            }
+
+            if (getCookie("Username")!="") {
+                $('#navbar').append('<a href="UserPage.html" class="link">'+getCookie("Username")+'</a>');
             }
         </script>
     </footer>

@@ -10,16 +10,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
+
+.title{
+    color: var(--white);
+    font-size: 52px;
+    font-weight: bold;
+}
+
 .header{
     background-color: var(--purple);
 }
-.header > a{
+
+.link{
     color: var(--white);
     font-size: 27px;
     font-weight: bold;
+    transition: all .5s;
 }
+
+.link:hover{
+    color: var(--green);
+}
+
 .Invalid{
     color: var(--red);
     font-size: 27px;
