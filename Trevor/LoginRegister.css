@@ -54,7 +54,7 @@ input[type=submit]{
 }
 
 .link:hover{
-    color: var(--green);
+    color: var(--blue);
 }
 
 .Invalid{
