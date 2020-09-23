@@ -6,13 +6,13 @@
         <!-- bootstrap -->
         <link rel="stylesheet" href="../css/bootstrap.css">
         <!-- ours -->
-        <link rel="stylesheet" href="../Global.css"
+        <link rel="stylesheet" href="../Global.css">
         <link rel="stylesheet" href="LoginRegister.css">
     </head>
     <header>
-        <div class="row header">
+        <div class="col header fullWidth">
             <div href="../Index.html" class="title">Shop Name.</div>
-            <nav class="row" id="navbar">
+            <nav class="row fullWidth linkCont" id="navbar">
                 <a href="../Index.html" class="link">Home</a>
                 <a href="Login.html" class="link">Login</a>
                 <a href="Register.html" class="link">Register</a>
@@ -22,14 +22,14 @@
     </header>
     <body>
         <div class="row">
-            <div class="col">
+            <div class="col fullHeight">
                 <div id="invalid" class="Invalid"></div>
                 <form class="" action="Register.php" method="post">
                     <label for="Username">Username:</label><br>
                     <input type="text" name="Username" ><br>
                     <label for="Password">Password:</label><br>
                     <input type="password" name="Password" value=""><br>
-                    <input type="submit" value="Register">
+                    <div class="row"><input type="submit" value="Register"><div>
                 </form>
             </div>
         </div>

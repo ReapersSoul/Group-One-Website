@@ -38,11 +38,12 @@ body {
     background-color: var(--maroonLight);
 }
 
-.buttons{
+input[type=submit]{
     background-color: var(--maroon);
     color: var(--white);
     border-color: var(--maroonLight);
     border-radius: 5px;
+    margin-top:  20px;
 }
 
 .link{
