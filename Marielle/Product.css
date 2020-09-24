@@ -1,0 +1,131 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+}
+footer {
+    padding-left: 25px; 
+    margin-top: 10px; 
+    color: white; 
+    background-color: #80000 !important;
+    font-family: 'Lobster Two', cursive;
+    font-size: 16pt; 
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    border-color: #90EE90; 
+}
+hr {
+    border-top: thin solid #90EE90; 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto; 
+}
+/*  ====================================================================== */
+/*  =========================== Jumbotron ================================ */
+.jumbotron {
+    background-image: url("../images/banner3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;  
+    margin-top:  18px;  
+    background-color: #ffd800;  /* yellow */
+    opacity: 1;
+    height: 300px;
+    text-align: right;
+}
+.jumbotron > .container {
+    background-color: transparent;
+} 
+/*  =============== Jumbotron Heading 2  ==========================  */
+    .jumbotron > .container > .display-3 {
+        color: #FFFFFF;
+        /* text-shadow: h-shadow-offset  v-shadow-offset  blur-radius color */
+        text-shadow: 2px 2px 4px #ffd800, 0 0 25px #ffd800, 0 0 5px #048703;
+        font-family: "Clicker Script", cursive; 
+    }
+    .jumbotron > .container > p {
+        color: #FFFFFF;
+        text-shadow: 2px 2px 4px #ffd800, 0 0 25px #ffd800, 0 0 5px #048703;
+    }  
+/*  ================ Jumbotron Button   =========================  */
+/*  You can use a unique classname, or you can nest the class as you did above  
+    Both methods would work. This is using the nested style hierarchy. 
+    The :hover is a pseudoclass. Hyperlinks have active, visited and hover states.
+*/
+.jumbotron > .container > p > .btn-primary {
+    color: #fff;
+    background-color: #048703;
+    border-color: #6405b7;
+    color: yellow;
+} 
+.jumbotron > .container > p > .btn-primary:hover {
+    color: #fff;
+    background-color: #6405b7;
+    border-color: #048703;
+    color: yellow;
+}
+/*  ====================================================================== */
+/*  ============== Customize the navigation bar ======================= */
+nav {
+    background-color: #048703; /* Green */
+}
+/*  ============ override the bg-dark ============ */
+.bg-dark {
+    background-color: #048703 !important; /* Green */
+}
+/* Dropdown selected item hover style */
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: hsl(120, 80%, 90%);
+    color: #155808;
+}
+/* Search Button */
+.btn-outline-success {
+    color: white;
+    border-color: white;
+} 
+    .btn-outline-success:hover {
+        background-color: #90EE90;
+        color: #155808;
+    }  
+
+/*  ====================================================================== */
+/*  ========================== Pottery Rows ================================== */
+/* Center the images */
+.mycenter {
+    text-align: center;
+} 
+/* Header text */
+.row > div > h2.rowheader  {
+    font-family: Impact;
+    font-size: 24pt;
+    color: #048703; /* purple #7843e9*/
+}
+hr~ h2:first-of-type { /*:first-of-type*/
+    font-family: Impact;
+    font-size: 24pt;
+    color: #f85f12; /* orange */
+}  
+
+div > div.col-md-6 > h2 ~ h3::first-letter {
+    color: #048703; /* #7843e9 */
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Segoe Script';
+} 
+
+img.pottery {
+  border-radius: 50%;
+}
+/*  ====================================================================== */
+/*  ====================================================================== */
+
+
+
+
+/*  ====================================================================== */
+/*  ====================================================================== */
