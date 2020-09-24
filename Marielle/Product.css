@@ -6,7 +6,7 @@ footer {
     padding-left: 25px; 
     margin-top: 10px; 
     color: white; 
-    background-color: #80000 !important;
+    background-color: #800000 !important;
     font-family: 'Lobster Two', cursive;
     font-size: 16pt; 
     font-weight: bold;
@@ -33,7 +33,7 @@ hr {
     background-size: cover;
     margin-bottom: 20px;  
     margin-top:  18px;  
-    background-color: #80000;  /* maroon */
+    background-color: #800000;  /* maroon */
     opacity: 1;
     height: 300px;
     text-align: right;
@@ -76,12 +76,12 @@ nav {
 }
 /*  ============ override the bg-dark ============ */
 .bg-dark {
-    background-color: #048703 !important; /* Green */
+    background-color: #800000 !important; /* Green */
 }
 /* Dropdown selected item hover style */
 .dropdown-item:focus, .dropdown-item:hover {
     background-color: hsl(120, 80%, 90%);
-    color: #155808;
+    color:white;
 }
 /* Search Button */
 .btn-outline-success {
