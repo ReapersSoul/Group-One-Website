@@ -28,12 +28,12 @@ hr {
 /*  ====================================================================== */
 /*  =========================== Jumbotron ================================ */
 .jumbotron {
-    background-image: url("../images/banner3.jpg");
+    background-image: url("../Marielle/Photos/GroceryStoreBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;  
     margin-top:  18px;  
-    background-color: #ffd800;  /* yellow */
+    background-color: #80000;  /* maroon */
     opacity: 1;
     height: 300px;
     text-align: right;
