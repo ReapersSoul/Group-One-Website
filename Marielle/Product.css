@@ -71,10 +71,6 @@ hr {
 }
 /*  ====================================================================== */
 /*  ============== Customize the navigation bar ======================= */
-body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
 
 .row{
     display: flex;
@@ -108,13 +104,13 @@ body {
 }
 
 .linkCont{
-    background-color: var(--maroonLight);
+    background-color:#800000;
 }
 
 input[type=submit]{
-    background-color: var(--maroon);
-    color: var(--white);
-    border-color: var(--maroonLight);
+    background-color:#800000;
+    color:white;
+    border-color:darkred;
     border-radius: 5px;
     margin-top:  20px;
 }
