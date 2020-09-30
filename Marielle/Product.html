@@ -37,18 +37,20 @@
   <body>
       
       <!-- ==========================  TOP MENU =========================== -->
-      <div class="col header fullWidth">
+      <header>
+        <div class="col header fullWidth">
             <div href="../Index.html" class="title">Shop Name.</div>
             <nav class="row fullWidth linkCont" id="navbar">
-                <a href="Index.html" class="link">Home</a>
-                <a href="Marielle/Product.html" class="link">Shop</a>
-                <a href="Trevor/Login.html" class="link">Login</a>
-                <a href="Trevor/Register.html" class="link">Register</a>
-                <a href="Marielle/About.html" class="link">About Us</a>
-                <a href="Carter/Contact.html" class="link">Contact Us</a>
-                <a href="Dakota/Team.html" class="link">Team</a>
+                <a href="../Index.html" class="link">Home</a>
+                <a href="../Marielle/Product.html" class="link">Shop</a>
+                <a href="../Trevor/Login.html" id="Login" class="link">Login</a>
+                <a href="../Trevor/Register.html" id="Register" class="link">Register</a>
+                <a href="../Marielle/About.html" class="link">About Us</a>
+                <a href="../Carter/Contact.html" class="link">Contact Us</a>
+                <a href="../Dakota/Team.html" class="link">Team</a>
             </nav>
         </div>
+    </header>
                 
 
        <!-- ==========================  MAIN CONTENT ====================== -->
@@ -68,9 +70,9 @@
             <div class="row">
               <div class="col-md-4">
                  <div class="thumbnail">
-                    <p class="mycenter"><img class="mycenter" src="../images/catbowlsmall.jpg" alt="..."></p>
+                    <p class="mycenter"><img class="mycenter" src="../Marielle/Photos/Purina%20Dog%20Food.png" alt="..."></p>
                     <div class="caption">
-                        <h3 class="mycenter">CatBowl</h3>
+                        <h3 class="mycenter">Purina Dog Food</h3>
                         <p>
                             Start your breakfast right with pouring your cereal into this hand made pottery of a cat bowl. Fits up to 4 cups of dry cereal! Just $15.00 today!
                         </p>
@@ -82,9 +84,9 @@
               </div>
               <div class="col-md-4">
                 <div class="thumbnail" >
-                    <p class="mycenter"><img src="../images/656.gif" alt="..."></p>
+                    <p class="mycenter"><img src="../Marielle/Photos/Burts%20Bees%20Shampoo.jpg" alt="..."></p>
                     <div class="caption">
-                        <h3 class="mycenter">Cat Plate</h3>
+                        <h3 class="mycenter">Burt's Bees dog Shampoo</h3>
                         <p>
                             Set your dinner table with the full set of plates, cups and bowls from Belinda Bradshaw. Cat plates are a terrific accent for your country kitchen. Now available for just $18.00.
                         </p>
@@ -96,9 +98,9 @@
               </div>
               <div class="col-md-4">
                  <div class="thumbnail">
-                    <p class="mycenter"><img src="../images/657.gif" alt="..."></p>
+                    <p class="mycenter"><img src="../Marielle/Photos/Leash%20Product.jpg" alt="..."></p>
                     <div class="caption">
-                        <h3 class="mycenter">Cat Mug</h3>
+                        <h3 class="mycenter">Leash and Harness</h3>
                         <p>
                             Did you know your cat mug is dishwasher safe? A great mug to bring to work. It&#39;s also microwaveable safe for your coffee or tea break! Now available for $10.00 online.
                         </p>
@@ -178,11 +180,45 @@
         </main>
 
       <!-- ==========================  FOOTER ============================= --> 
-      <footer class="container" >
-            <p>&copy; Web-Genie, 2020</p>
-      </footer>
+          <footer>
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- bootstrap -->
+        <script src="../js/bootstrap.js"></script>
+        <!-- ours -->
+        <script src="../Global.js"></script>
+        <!-- popper and tippy -->
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
-      
+        <script>
+          // With the above scripts loaded, you can call `tippy()` with a CSS
+          // selector and a `content` prop:
+          tippy('#Login', {
+            content: '<div id="invalid" class="Invalid"></div><form class="" action="Trevor/Login.php" method="post"><label for="Username">Username:</label><br><input type="text" name="Username" ><br><label for="Password">Password:</label><br><input type="password" name="Password" value=""><br><div class="row"><input type="submit" value="Login"></div></form>',
+            allowHTML: true,
+            interactive: true,
+          });
+
+          tippy('#Register', {
+            content: '<div id="invalid" class="Invalid"></div><form class="" action="Trevor/Register.php" method="post"><label for="Username">Username:</label><br><input type="text" name="Username" ><br><label for="Password">Password:</label><br><input type="password" name="Password" value=""><br><div class="row"><input type="submit" value="Register"><div></form>',
+            allowHTML: true,
+            interactive: true,
+          });
+        </script>
+
+        <script type="text/javascript">
+            if (getCookie("InvalidLogin")=="true") {
+                $('#invalid').append('Invalid Login!');
+                setCookie("InvalidLogin","");
+            }
+
+            if (getCookie("Username")!="") {
+                $('#navbar').append('<a href="UserPage.html" class="link">'+getCookie("Username")+'</a>');
+            }
+        </script>
+    </footer>
+        
        <!-- ==========================  JAVASCRIPTS ========================= -->
        <!-- ========================== Custom =============================== -->
        
