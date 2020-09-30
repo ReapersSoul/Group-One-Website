@@ -1,7 +1,4 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
-body {
-  padding-top: 3.5rem;
-}
 footer {
     padding-left: 25px; 
     margin-top: 10px; 
@@ -59,9 +56,9 @@ hr {
 */
 .jumbotron > .container > p > .btn-primary {
     color: #fff;
-    background-color: #048703;
-    border-color: #6405b7;
-    color: yellow;
+    background-color: #b54f4f;
+    border-color: #800000;
+    color: white;
 } 
 .jumbotron > .container > p > .btn-primary:hover {
     color: #fff;
@@ -71,27 +68,71 @@ hr {
 }
 /*  ====================================================================== */
 /*  ============== Customize the navigation bar ======================= */
-nav {
-    background-color: #800000; /* maroon */
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-/*  ============ override the bg-dark ============ */
-.bg-dark {
-    background-color: #800000 !important; /* Green */
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-/* Dropdown selected item hover style */
-.dropdown-item:focus, .dropdown-item:hover {
-    background-color: hsl(120, 80%, 90%);
+
+.title{
     color:white;
+    font-size: 52px;
+    font-weight: bold;
 }
-/* Search Button */
-.btn-outline-success {
-    color: white;
-    border-color: white;
-} 
-    .btn-outline-success:hover {
-        background-color: #90EE90;
-        color: #155808;
-    }  
+
+.header{
+    background-color:#800000;
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.fullHeight{
+    height: 80vh;
+}
+
+.linkCont{
+    background-color:#b54f4f;
+}
+
+input[type=submit]{
+    background-color:#800000;
+    color:white;
+    border-color:darkred;
+    border-radius: 5px;
+    margin-top:  20px;
+}
+
+.link{
+    color:white;
+    font-size: 27px;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.link:hover{
+    color: var(--green);
+}
+
+.Invalid{
+    color: var(--red);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.topmarg{
+    margin-top: 200px;
+}
+
 
 /*  ====================================================================== */
 /*  ========================== Pottery Rows ================================== */
