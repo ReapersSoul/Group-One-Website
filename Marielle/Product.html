@@ -20,7 +20,7 @@
     
     <!-- ===================== Fonts  ==================================== -->
       <!-- Don't do both font methods. Choose one option -->
-      <link href="https://fonts.googleapis.com/css2?     family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet"> 
       <!-- 
         <style>
@@ -37,50 +37,19 @@
   <body>
       
       <!-- ==========================  TOP MENU =========================== -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <!-- a class="navbar-brand" href="home.html">Smith Cavaliers -->
-          
-          <a class="navbar-brand" href="../Index.html"><img src="../Marielle/Photos/ShoppingBasket.png" alt="Basket" width="50px" height="50px" /></a>
-           
-          <!-- Button for mobile devices -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-            controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="../Index.html">Home<span class="sr-only"></span></a>
-                  </li> 
-                  <!-- ============= Dropdown Menu ============== -->
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="../Marielle/About.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                      <a class="dropdown-item" href="../Dakota/Team.html">Team</a>
-                      <a class="dropdown-item" href="../Dakota/Error.html">Error</a> 
-                    </div>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Carter/Contact.html">Contact</a>
-                  </li> 
-                    <li class="nav-item">
-                    <a class="nav-link" href="../Marielle/Product.html">Product</a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Trevor/Login.html">Login</a>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" href="../Trevor/Register.html">Register</a>
-                  </li>  
-
-                </ul> 
-                 <!--Search Button -->
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-              </div>
-      </nav>
+      <div class="col header fullWidth">
+            <div href="../Index.html" class="title">Shop Name.</div>
+            <nav class="row fullWidth linkCont" id="navbar">
+                <a href="Index.html" class="link">Home</a>
+                <a href="Marielle/Product.html" class="link">Shop</a>
+                <a href="Trevor/Login.html" class="link">Login</a>
+                <a href="Trevor/Register.html" class="link">Register</a>
+                <a href="Marielle/About.html" class="link">About Us</a>
+                <a href="Carter/Contact.html" class="link">Contact Us</a>
+                <a href="Dakota/Team.html" class="link">Team</a>
+            </nav>
+        </div>
+                
 
        <!-- ==========================  MAIN CONTENT ====================== -->
        <main> 
@@ -88,8 +57,8 @@
        <!-- Main jumbotron for a primary marketing message or call to action -->
           <div class="jumbotron">
             <div class="container">
-                <h2 class="display-3">Tara Store</h2>
-                <p>Check out our Belinda Bradshaw Pottery!</p>
+                <h2 class="display-3">Pet Supplies</h2>
+                <p>Shop our selection of Pet Supplies!</p>
                 <p><a class="btn btn-primary btn-lg" href="#" role="button">Shop Now! &raquo;</a></p>
             </div>
           </div> 
@@ -210,7 +179,7 @@
 
       <!-- ==========================  FOOTER ============================= --> 
       <footer class="container" >
-            <p>&copy; John Smith, 2020</p>
+            <p>&copy; Web-Genie, 2020</p>
       </footer>
 
       
@@ -219,7 +188,7 @@
        
        <!-- ========================== JQuery, Popper, Bootstrap JS ========= -->
        
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-     DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 
