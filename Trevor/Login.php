@@ -1,9 +1,9 @@
 <?php
     //echo $_POST["Username"]."<br>".$_POST["Password"]."<br>";
 
-    $servername = "sql9.freesqldatabase.com";
-    $username = "Admin";
-    $password = "kX2SUCX6D8MNxYJ";
+    $servername = "localhost";
+    $username = "admin";
+    $password = "";
 
     // Create connection
     $conn = new mysqli($servername, $username, $password,"sql9365852");
