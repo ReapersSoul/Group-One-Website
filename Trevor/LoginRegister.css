@@ -23,7 +23,8 @@ body {
 }
 
 .header{
-    background-color: var(--maroon);
+    background: rgb(51,0,0);
+    background: linear-gradient(180deg, rgba(51,0,0,1) 0%, rgba(70,0,0,1) 10%, rgba(93,0,0,1) 50%, rgba(128,0,0,1) 100%);
 }
 
 .fullWidth{
@@ -39,6 +40,13 @@ body {
 }
 
 input[type=submit]{
+    background-color: var(--maroon);
+    color: var(--white);
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    margin-top:  20px;
+}
+.button{
     background-color: var(--maroon);
     color: var(--white);
     border-color: var(--maroonLight);
