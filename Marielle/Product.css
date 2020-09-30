@@ -113,7 +113,7 @@ input[type=submit]{
 }
 
 .link{
-    color: var(--white);
+    color:white;
     font-size: 27px;
     font-weight: bold;
     transition: all .5s;
