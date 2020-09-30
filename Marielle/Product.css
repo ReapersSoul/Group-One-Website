@@ -71,27 +71,75 @@ hr {
 }
 /*  ====================================================================== */
 /*  ============== Customize the navigation bar ======================= */
-nav {
-    background-color: #800000; /* maroon */
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-/*  ============ override the bg-dark ============ */
-.bg-dark {
-    background-color: #800000 !important; /* Green */
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
-/* Dropdown selected item hover style */
-.dropdown-item:focus, .dropdown-item:hover {
-    background-color: hsl(120, 80%, 90%);
-    color:white;
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-/* Search Button */
-.btn-outline-success {
-    color: white;
-    border-color: white;
-} 
-    .btn-outline-success:hover {
-        background-color: #90EE90;
-        color: #155808;
-    }  
+
+.title{
+    color: var(--white);
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.header{
+    background-color: var(--maroon);
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.fullHeight{
+    height: 80vh;
+}
+
+.linkCont{
+    background-color: var(--maroonLight);
+}
+
+input[type=submit]{
+    background-color: var(--maroon);
+    color: var(--white);
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    margin-top:  20px;
+}
+
+.link{
+    color: var(--white);
+    font-size: 27px;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.link:hover{
+    color: var(--green);
+}
+
+.Invalid{
+    color: var(--red);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.topmarg{
+    margin-top: 200px;
+}
+
 
 /*  ====================================================================== */
 /*  ========================== Pottery Rows ================================== */
