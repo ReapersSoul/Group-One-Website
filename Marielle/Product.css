@@ -56,8 +56,8 @@ hr {
 */
 .jumbotron > .container > p > .btn-primary {
     color: #fff;
-    background-color: #800000;
-    border-color: #b54f4f;
+    background-color: #b54f4f;
+    border-color: #800000;
     color: white;
 } 
 .jumbotron > .container > p > .btn-primary:hover {
