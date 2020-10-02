@@ -1,5 +1,6 @@
 p { /* The standard text for paragraphs*/
     font-family: serif;
+    font-size: 18px;
 }
 
 h1{ /* This is how each opening looks*/
