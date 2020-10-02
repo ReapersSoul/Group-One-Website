@@ -10,7 +10,7 @@
 
     // Check connection
     if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
+      header('Location: ../Dakota/Error.html');
     }
 
     $sql = mysqli_real_escape_string ($conn, "SELECT * FROM Users WHERE UserName='".$_POST["Username"]."'");

@@ -1,26 +1,26 @@
 /* Move down content because we have a fixed navbar that is 3.5rem tall */
 footer {
-    padding-left: 25px; 
-    margin-top: 10px; 
-    color: white; 
+    padding-left: 25px;
+    margin-top: 10px;
+    color: white;
     background-color: #800000 !important;
     font-family: 'Lobster Two', cursive;
-    font-size: 16pt; 
+    font-size: 16pt;
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
     text-align: center;
     border-style: solid;
     border-width: thin;
-    border-color: #90EE90; 
+    border-color: #90EE90;
 }
 hr {
-    border-top: thin solid #90EE90; 
+    border-top: thin solid #90EE90;
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
 }
 /*  ====================================================================== */
 /*  =========================== Jumbotron ================================ */
@@ -28,8 +28,8 @@ hr {
     background-image: url("../Marielle/Photos/GroceryStoreBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 20px;  
-    margin-top:  18px;  
+    margin-bottom: 20px;
+    margin-top:  18px;
     background-color: #800000;  /* maroon */
     opacity: 1;
     height: 300px;
@@ -37,21 +37,21 @@ hr {
 }
 .jumbotron > .container {
     background-color: transparent;
-} 
+}
 /*  =============== Jumbotron Heading 2  ==========================  */
     .jumbotron > .container > .display-3 {
         color: #FFFFFF;
         /* text-shadow: h-shadow-offset  v-shadow-offset  blur-radius color */
         text-shadow: 2px 2px 4px #ffd800, 0 0 25px #ffd800, 0 0 5px #048703;
-        font-family: "Clicker Script", cursive; 
+        font-family: "Clicker Script", cursive;
     }
     .jumbotron > .container > p {
         color: #FFFFFF;
         text-shadow: 2px 2px 4px #ffd800, 0 0 25px #ffd800, 0 0 5px #048703;
-    }  
+    }
 /*  ================ Jumbotron Button   =========================  */
-/*  You can use a unique classname, or you can nest the class as you did above  
-    Both methods would work. This is using the nested style hierarchy. 
+/*  You can use a unique classname, or you can nest the class as you did above
+    Both methods would work. This is using the nested style hierarchy.
     The :hover is a pseudoclass. Hyperlinks have active, visited and hover states.
 */
 .jumbotron > .container > p > .btn-primary {
@@ -59,7 +59,7 @@ hr {
     background-color: #b54f4f;
     border-color: #800000;
     color: white;
-} 
+}
 .jumbotron > .container > p > .btn-primary:hover {
     color: #fff;
     background-color: #6405b7;
@@ -69,69 +69,6 @@ hr {
 /*  ====================================================================== */
 /*  ============== Customize the navigation bar ======================= */
 
-.row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-.col{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.title{
-    color:white;
-    font-size: 52px;
-    font-weight: bold;
-}
-
-.header{
-    background-color:#800000;
-}
-
-.fullWidth{
-    width: 100%;
-}
-
-.fullHeight{
-    height: 80vh;
-}
-
-.linkCont{
-    background-color:#b54f4f;
-}
-
-input[type=submit]{
-    background-color:#800000;
-    color:white;
-    border-color:darkred;
-    border-radius: 5px;
-    margin-top:  20px;
-}
-
-.link{
-    color:white;
-    font-size: 27px;
-    font-weight: bold;
-    transition: all .5s;
-}
-
-.link:hover{
-    color: var(--green);
-}
-
-.Invalid{
-    color: var(--red);
-    font-size: 27px;
-    font-weight: bold;
-}
-
-.topmarg{
-    margin-top: 200px;
-}
 
 
 /*  ====================================================================== */
@@ -139,7 +76,7 @@ input[type=submit]{
 /* Center the images */
 .mycenter {
     text-align: center;
-} 
+}
 /* Header text */
 .row > div > h2.rowheader  {
     font-family: Impact;
@@ -150,14 +87,14 @@ hr~ h2:first-of-type { /*:first-of-type*/
     font-family: Impact;
     font-size: 24pt;
     color: #f85f12; /* orange */
-}  
+}
 
 div > div.col-md-6 > h2 ~ h3::first-letter {
     color: #048703; /* #7843e9 */
     font-size: 2em;
     font-weight: bold;
     font-family: 'Segoe Script';
-} 
+}
 
 img.pottery {
   border-radius: 50%;
