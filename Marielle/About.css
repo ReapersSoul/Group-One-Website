@@ -67,6 +67,11 @@ input[type=submit]{
     margin-top: 200px;
 }
 
+h{color: black;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
 p{color: black;
     text-align: center;
     font-family: 'Oswald', sans-serif;
