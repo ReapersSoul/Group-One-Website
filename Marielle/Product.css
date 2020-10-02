@@ -80,14 +80,14 @@ hr {
 /* Header text */
 h3  {
     font-family: 'Oswald', sans-serif;
-    font-size: 24pt;
+    font-size: 16pt;
     color:black;
     padding-left: 50px;
     padding-right: 50px/* purple #7843e9*/
 }
 p { /*:first-of-type*/
     font-family: 'Oswald', sans-serif;
-    font-size: 24pt;
+    font-size: 16pt;
     color: #f85f12;
     padding-left: 50px;
     padding-right: 50px/* orange */
