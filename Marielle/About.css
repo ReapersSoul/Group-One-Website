@@ -66,3 +66,9 @@ input[type=submit]{
 .topmarg{
     margin-top: 200px;
 }
+
+p{color: black;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+}
