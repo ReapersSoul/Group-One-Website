@@ -32,5 +32,5 @@
 
     $conn->close();
 
-    header('Location: Login.html');
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>

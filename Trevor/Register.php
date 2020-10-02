@@ -39,6 +39,6 @@
     setcookie("Username", $_POST["Username"],time() + 3600);
     setcookie("Password", $_POST["Password"],time() + 3600);
 
-    header('Location: Register.html');
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 ?>
