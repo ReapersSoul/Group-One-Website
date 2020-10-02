@@ -22,6 +22,11 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
+
+nav{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+}
 /*  ====================================================================== */
 /*  =========================== Jumbotron ================================ */
 .jumbotron {
