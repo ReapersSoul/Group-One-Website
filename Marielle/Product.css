@@ -81,7 +81,9 @@ hr {
 .row > div > h2.rowheader  {
     font-family: 'Oswald', sans-serif;
     font-size: 24pt;
-    color: #048703; /* purple #7843e9*/
+    color: #048703;
+    padding-left: 50px;
+    padding-right: 50px/* purple #7843e9*/
 }
 hr~ h2:first-of-type { /*:first-of-type*/
     font-family: 'Oswald', sans-serif;
