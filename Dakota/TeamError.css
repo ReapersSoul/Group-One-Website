@@ -1,0 +1,12 @@
+p { /* The standard text for paragraphs*/
+    font-family: serif;
+}
+
+h1{ /* This is how each opening looks*/
+    color:darkred;
+}
+
+h3 { /* The text for the headings in the team page */
+    font-family: Verdana, sans-serif;
+    color:firebrick;
+}
