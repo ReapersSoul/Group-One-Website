@@ -68,74 +68,7 @@ hr {
 }
 /*  ====================================================================== */
 /*  ============== Customize the navigation bar ======================= */
-body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
 
-.row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-.col{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.title{
-    color: var(--white);
-    font-size: 52px;
-    font-weight: bold;
-}
-
-.header{
-    background-color: var(--maroon);
-}
-
-.fullWidth{
-    width: 100%;
-}
-
-.fullHeight{
-    height: 80vh;
-}
-
-.linkCont{
-    background-color: var(--maroonLight);
-}
-
-input[type=submit]{
-    background-color: var(--maroon);
-    color: var(--white);
-    border-color: var(--maroonLight);
-    border-radius: 5px;
-    margin-top:  20px;
-}
-
-.link{
-    color: var(--white);
-    font-size: 27px;
-    font-weight: bold;
-    transition: all .5s;
-}
-
-.link:hover{
-    color: var(--green);
-}
-
-.Invalid{
-    color: var(--red);
-    font-size: 27px;
-    font-weight: bold;
-}
-
-.topmarg{
-    margin-top: 200px;
-}
 
 
 /*  ====================================================================== */
