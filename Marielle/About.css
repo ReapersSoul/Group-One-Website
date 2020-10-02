@@ -1,7 +1,3 @@
-body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
 
 .row{
     display: flex;
@@ -80,3 +76,6 @@ p{color: black;
     padding-right: 200px
 
 }
+
+
+
