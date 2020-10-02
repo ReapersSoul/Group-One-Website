@@ -48,7 +48,7 @@ nav{
 }
 /*  =============== Jumbotron Heading 2  ==========================  */
     .jumbotron > .container > .display-3 {
-        color: #FFFFFF;
+        color: black;
         /* text-shadow: h-shadow-offset  v-shadow-offset  blur-radius color */
         text-shadow: 2px 2px 4px #800000, 0 0 25px #800000, 0 0 5px #800000;
         font-family: 'Luckiest Guy', cursive;
