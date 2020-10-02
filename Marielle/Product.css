@@ -50,7 +50,7 @@ nav{
     .jumbotron > .container > .display-3 {
         color: #FFFFFF;
         /* text-shadow: h-shadow-offset  v-shadow-offset  blur-radius color */
-        text-shadow: 2px 2px 4px #ffd800, 0 0 25px #ffd800, 0 0 5px #048703;
+        text-shadow: 2px 2px 4px #800000, 0 0 25px #800000, 0 0 5px #800000;
         font-family: "Clicker Script", cursive;
     }
     .jumbotron > .container > p {
