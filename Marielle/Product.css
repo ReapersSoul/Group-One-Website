@@ -78,25 +78,21 @@ hr {
     text-align: center;
 }
 /* Header text */
-.row > div > h2.rowheader  {
+h3  {
     font-family: 'Oswald', sans-serif;
     font-size: 24pt;
-    color: #048703;
+    color:black;
     padding-left: 50px;
     padding-right: 50px/* purple #7843e9*/
 }
-hr~ h2:first-of-type { /*:first-of-type*/
+p { /*:first-of-type*/
     font-family: 'Oswald', sans-serif;
     font-size: 24pt;
-    color: #f85f12; /* orange */
+    color: #f85f12;
+    padding-left: 50px;
+    padding-right: 50px/* orange */
 }
 
-div > div.col-md-6 > h2 ~ h3::first-letter {
-    color: #048703; /* #7843e9 */
-    font-size: 2em;
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif;
-}
 
 img.pottery {
   border-radius: 50%;
