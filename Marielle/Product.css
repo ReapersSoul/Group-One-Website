@@ -41,7 +41,7 @@ nav{
     background-color: #800000;  /* maroon */
     opacity: 1;
     height: 300px;
-    text-align: right;
+    text-align:center;
 }
 .jumbotron > .container {
     background-color: transparent;
