@@ -20,6 +20,8 @@ hr {
     margin-bottom: 0.5em;
     margin-left: auto;
     margin-right: auto;
+}
+header{
     color: white;
     font-family: 'Oswald', sans-serif;
 }
