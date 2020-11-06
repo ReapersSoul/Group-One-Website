@@ -1,0 +1,135 @@
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+:root{
+    font-family: 'Oswald', sans-serif;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: var(--white);
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.header{
+    background: rgb(51,0,0);
+    background: linear-gradient(180deg, rgba(51,0,0,1) 0%, rgba(70,0,0,1) 10%, rgba(93,0,0,1) 50%, rgba(128,0,0,1) 100%);
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.fullHeight{
+    height: 80vh;
+}
+
+.linkCont{
+    background-color: var(--maroonLight);
+}
+
+input[type=submit]{
+    background-color: var(--maroon);
+    color: var(--white);
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    margin-top:  20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+input[type=password]{
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+input[type=text]{
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.page>.row>input[type=submit]{
+    background-color: var(--maroon);
+    color: var(--white);
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    margin-top:  20px;
+    width: 125px;
+    height:50px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.page>input[type=password]{
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    margin-top:  20px;
+    width: 300px;
+    height:50px;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+}
+.page>input[type=text]{
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    margin-top:  20px;
+    font-family: 'Oswald', sans-serif;
+    width: 300px;
+    height:50px;
+    font-size: 25px;
+
+}
+
+.page>label{
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.button{
+    background-color: var(--maroon);
+    color: var(--white);
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    margin-top:  20px;
+    width: 125px;
+    height:50px;
+    font-size: 25px;
+}
+
+.link{
+    color: var(--white);
+    font-size: 27px;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.link:hover{
+    color: var(--blue);
+}
+
+.Invalid{
+    color: var(--red);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.topmarg{
+    margin-top: 200px;
+}

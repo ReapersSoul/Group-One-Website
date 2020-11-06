@@ -1,0 +1,128 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+footer {
+    padding-left: 25px;
+    margin-top: 10px;
+    color: white;
+    background-color: #800000 !important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    border-style: solid;
+    border-width: thin;
+    border-color: #90EE90;
+}
+hr {
+    border-top: thin solid #90EE90;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+/*  ====================================================================== */
+/*  =========================== Jumbotron ================================ */
+.jumbotron {
+    background-image: url("../Marielle/Photos/GroceryStoreBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    background-color: #800000;  /* maroon */
+    opacity: 1;
+    height: 300px;
+    text-align:center;
+}
+.jumbotron > .container {
+    background-color: transparent;
+}
+/*  =============== Jumbotron Heading 2  ==========================  */
+    .jumbotron > .container > .display-3 {
+        color: #FFFFFF;
+        /* text-shadow: h-shadow-offset  v-shadow-offset  blur-radius color */
+        text-shadow: 2px 2px 4px #800000, 0 0 25px #800000, 0 0 5px #800000;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 50px;
+    }
+    .jumbotron > .container > p {
+        color: #FFFFFF;
+        font-size: 30px;
+        text-shadow: 2px 2px 4px #800000, 0 0 25px #800000, 0 0 5px #800000;
+    }
+/*  ================ Jumbotron Button   =========================  */
+/*  You can use a unique classname, or you can nest the class as you did above
+    Both methods would work. This is using the nested style hierarchy.
+    The :hover is a pseudoclass. Hyperlinks have active, visited and hover states.
+*/
+.jumbotron > .container > p > .btn-primary {
+    color: #fff;
+    background-color: #b54f4f;
+    border-color: #800000;
+    color: white;
+}
+.jumbotron > .container > p > .btn-primary:hover {
+    color: #fff;
+    background-color: #6405b7;
+    border-color: #048703;
+    color: yellow;
+}
+/*  ====================================================================== */
+/*  ============== Customize the navigation bar ======================= */
+
+
+
+/*  ====================================================================== */
+/*  ========================== Pottery Rows ================================== */
+/* Center the images */
+.mycenter {
+    text-align: center;
+}
+/* Header text */
+h3  {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16pt;
+    color:black;
+    padding-left: 50px;
+    padding-right: 50px/* purple #7843e9*/
+}
+p { /*:first-of-type*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 16pt;
+    color: #f85f12;
+    padding-left: 50px;
+    padding-right: 50px/* orange */
+}
+
+
+img.pottery {
+  border-radius: 50%;
+}
+body {
+  background-color:lightyellow;
+}
+/*  ====================================================================== */
+/*  ====================================================================== */
+.link{
+    text-decoration: none;
+}
+
+.bdy{
+    margin: 0px;
+}
+
+.removebackground{
+        border-color: none;
+}
+
+/*  ====================================================================== */
+/*  ====================================================================== */
