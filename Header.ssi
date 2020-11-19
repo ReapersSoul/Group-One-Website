@@ -1,9 +1,13 @@
 <div class="col header fullWidth">
-    <div href="../Index.html" class="title">Shop Name.</div>
+    <div href="index.php" class="title">Pet Planet</div>
     <nav class="row fullWidth linkCont" id="navbar">
-        <a href="../Index.html" class="link">Home</a>
-        <a href="Login.html" id="Login" class="link">Login</a>
-        <a href="Register.html" id="Register" class="link">Register</a>
-
+        <a href="index.php" class="link">Home</a>
+        <a href="product.php" class="link">Shop</a>
+        <a href="login.php" id="Login" class="link">Login</a>
+        <a href="register.php" id="Register" class="link">Register</a>
+        <a href="about.php" class="link">About Us</a>
+        <a href="contact.php" class="link">Contact Us</a>
+        <a href="team.php" class="link">Team</a>
     </nav>
+    
 </div>
