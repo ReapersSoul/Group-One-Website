@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Dakota Gray">
     <meta name="description" content="Pet Planet's Error Page.  Loads when a page couldn't be found.">
-    <meta name="keywords" content="Error, Missing Page, Group 1 Project">
+    <meta name="keywords" content="Error, Missing Page, Pet Planet, Group 1 Project">
 
     <!-- Title of the Page -->
     <title>Error! Page Not Found!</title>

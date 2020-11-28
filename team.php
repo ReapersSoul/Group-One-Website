@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Dakota Gray">
     <meta name="description" content="Pet Planet's Website Designer Information Page">
-    <meta name="keywords" content="Team, Contributions, Group 1 Project">
+    <meta name="keywords" content="Team, Contributions, Pet Planet, Group 1 Project">
 
     <!-- Title of the Page -->
     <title>Meet the Team!</title>
