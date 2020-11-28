@@ -1,0 +1,14 @@
+<header id="header">
+    <div class="col header fullWidth">
+        <div href="./Index.php" class="title">Pet Planet.</div>
+        <nav class="row fullWidth linkCont" id="navbar">
+            <a href="./Index.php" class="link">Home</a>
+            <a href="./Product.php" class="link">Shop</a>
+            <a href="./Login.php" id="Login" class="link">Login</a>
+            <a href="./Register.php" id="Register" class="link">Register</a>
+            <a href="./About.php" class="link">About Us</a>
+            <a href="./Contact.php" class="link">Contact Us</a>
+            <a href="./Team.php" class="link">Team</a>
+        </nav>
+    </div>
+</header>
