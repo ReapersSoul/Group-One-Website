@@ -29,7 +29,7 @@
                     <input type="text" name="Username" ><br>
                     <label for="Password">Password:</label><br>
                     <input type="password" name="Password" value=""><br>
-                    <button class="button" onclick="alert('You have been registered!')"><input type="submit" value="Register"></button>
+                    <input type="submit" value="Register" onclick="alert('You have been registered!')">
                 </form>
             </div>
         </div>
