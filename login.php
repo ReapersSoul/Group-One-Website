@@ -28,7 +28,7 @@
                     <input type="text" name="Username" ><br>
                     <label for="Password">Password:</label><br>
                     <input type="password" name="Password" value=""><br>
-                    <div class="row"><input type="submit" value="Login"></div>
+                    <div class="row"><input type="submit" value="Login" onclick="alert('Logging in!')"></div>
                 </form>
             </div>
         </div>
