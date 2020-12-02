@@ -26,7 +26,7 @@
 
 <header>
     <!-- Link to Header.ssi-->
-    <?php include 'Header.ssi'; ?>
+    <?php include 'ssi/Header.ssi'; ?>
 </header>
 
 <body>
@@ -50,6 +50,6 @@
 </body>
 
     <!-- Link to Footer.ssi -->
-    <?php include 'Footer.ssi'; ?>
+    <?php include 'ssi/Footer.ssi'; ?>
 
 </html>
