@@ -29,6 +29,8 @@
                     <input type="text" name="Username" ><br>
                     <label for="Password">Password:</label><br>
                     <input type="password" name="Password" value=""><br>
+                    <label for="Confirm Password">Confirm Password:</label><br>
+                    <input type="password" name="CnfPassword" value=""><br>
                     <input type="submit" value="Register" onclick="alert('You have been registered!')">
                 </form>
             </div>
