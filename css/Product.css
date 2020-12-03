@@ -34,7 +34,7 @@ nav{
 /*  ====================================================================== */
 /*  =========================== Jumbotron ================================ */
 .jumbotron {
-    background-image: url("../Marielle/Photos/GroceryStoreBackground.jpg");
+    background-image: url("../img/GroceryStoreBackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;

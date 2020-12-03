@@ -13,11 +13,11 @@
     <link rel="shortcut icon" href="favicon.ico"/>
 
     <!--  =================== Bootstrap core CSS =========================== -->
-    <link href="../styles/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- ===================== Custom styles for this template ============ -->
-    <link href="../Global.css" rel="stylesheet">
-    <link href="Product.css" rel="stylesheet">
+    <link href="css/Global.css" rel="stylesheet">
+    <link href="css/Product.css" rel="stylesheet">
 
 
     <!-- ===================== Fonts  ==================================== -->
@@ -37,8 +37,8 @@
     <body class="bdy">
       <!-- ==========================  TOP MENU =========================== -->
       <header>
-      <!--Link to Header-->
-        <?php include 'ssi/Header.ssi'; ?>
+            <!--Link to Header-->
+            <?php include 'ssi/Header.ssi'; ?>
           
         </header>
 
@@ -60,7 +60,7 @@
             <div class="row">
               <div class="col-md-4">
                  <div class="thumbnail">
-                    <p class="mycenter"><img class="mycenter" src="../Marielle/Photos/Burts%20Bees%20Shampoo.png" alt="Burt's Bees Shampoo" width="300" height="200"></p>
+                    <p class="mycenter"><img class="mycenter" src="../img/Burts%20Bees%20Shampoo.png" alt="Burt's Bees Shampoo" width="300" height="200"></p>
                     <div class="caption">
                         <h3 class="mycenter">Burt's Bees Dog Shampoo</h3>
                         <p>
@@ -74,7 +74,7 @@
               </div>
               <div class="col-md-4">
                 <div class="thumbnail" >
-                    <p class="mycenter"><img src="../Marielle/Photos/Purina%20Dog%20Food.png" alt="Purina Dog Food" width="300" height="200"></p>
+                    <p class="mycenter"><img src="../img/Purina%20Dog%20Food.png" alt="Purina Dog Food" width="300" height="200"></p>
                     <div class="caption">
                         <h3 class="mycenter">Purina Dog Food</h3>
                         <p>
@@ -88,7 +88,7 @@
               </div>
               <div class="col-md-4">
                  <div class="thumbnail">
-                    <p class="mycenter"><img src="../Marielle/Photos/Leash%20Product.png" alt="Leash and Harness" width="300" height="200"></p>
+                    <p class="mycenter"><img src="../img/Leash%20Product.png" alt="Leash and Harness" width="300" height="200"></p>
                     <div class="caption">
                         <h3 class="mycenter">Leash and Harness</h3>
                         <p>
@@ -107,7 +107,7 @@
          <div class="row">
               <div class="col-md-4">
                  <div class="thumbnail">
-                    <p class="mycenter"><img src="../Marielle/Photos/Marvin%20Moose.png" alt="Marvin the Moose" width="300" height="200"></p>
+                    <p class="mycenter"><img src="../img/Marvin%20Moose.png" alt="Marvin the Moose" width="300" height="200"></p>
                     <div class="caption">
                         <h3 class="mycenter">Marvin the Moose Plush Dog Toy</h3>
                         <p>
@@ -122,7 +122,7 @@
               </div>
               <div class="col-md-4">
                 <div class="thumbnail" >
-                    <p class="mycenter"><img src="../Marielle/Photos/Meow%20Mix.png" alt="Meow Mix" width="300" height="200"></p>
+                    <p class="mycenter"><img src="../img/Meow%20Mix.png" alt="Meow Mix" width="300" height="200"></p>
                     <div class="caption">
                         <h3 class="mycenter">Meow Mix Cat Food</h3>
                         <p>
@@ -136,7 +136,7 @@
               </div>
               <div class="col-md-4">
                  <div class="thumbnail">
-                    <p class="mycenter"><img src="../Marielle/Photos/Bird%20Disco%20ball.png" alt="Bird Disco Ball" width="300" height="200"></p>
+                    <p class="mycenter"><img src="../img/Bird%20Disco%20ball.png" alt="Bird Disco Ball" width="300" height="200"></p>
                     <div class="caption">
                         <h3 class="mycenter">Bird Disco Ball Toy</h3>
                         <p>
@@ -157,6 +157,6 @@
     </body>
     
         <!-- Link to footer-->
-   <?php include 'ssi/Footer.ssi'; ?>
+        <?php include 'ssi/Footer.ssi'; ?>
       
 </html>
