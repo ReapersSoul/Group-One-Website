@@ -6,8 +6,8 @@
         <!-- bootstrap -->
         <link rel="stylesheet" href="./css/bootstrap.css">
         <!-- ours -->
-        <link rel="stylesheet" href="./css/Global.css">
-        <link rel="stylesheet" href="About.css">
+        <link rel="stylesheet" href="../css/Global.css">
+        <link rel="stylesheet" href="../Group-One-Website/css/About.css">
         <!-- ===================== Fonts  ==================================== -->
       <!-- Don't do both font methods. Choose one option -->
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
