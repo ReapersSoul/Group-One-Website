@@ -31,18 +31,7 @@
             <?php include 'ssi/Header.ssi'; ?>
             </header>
     <main>
-        <?php
-        title= "Marivin Moose";
-        price= "$4.99"
-        descriptionTitle= "Description"
-        descriptionText= "The KONG Cozies are cute, soft and cuddly plush toys made with an extra layer of material, so they’re extra tough. Cozies are perfect for a game of fetch or as a comfort toy for your furry friend. Grab one of the 10 amazingly cute Cozie characters for your dog and we know your dog will love you for it."
-        BenefitsTitle= "Key Benefits"
-        BenefitsText= "Soft and cuddly plush toys made with an extra layer of material, so they’re extra tough.
-Minimal filling for less mess around the house.
-Perfect for a game of fetch or as a comfort toy for your furry friend.
-Squeaks to help entice play for extra excitement.
-Available in two different sizes: Small and Medium, so you can pick the perfect size for your pup."
-            ?>
+       
             </main>
            
             
@@ -50,3 +39,8 @@ Available in two different sizes: Small and Medium, so you can pick the perfect 
             
             
     </body>
+    
+        <!--Link to footer-->
+        <?php include 'ssi/Footer.ssi'; ?>
+    
+</html>
