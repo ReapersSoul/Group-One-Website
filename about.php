@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <title></title>
         <!-- bootstrap -->
-        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <!-- ours -->
-        <link rel="stylesheet" href="../css/Global.css">
-        <link rel="stylesheet" href="../Group-One-Website/css/About.css">
+        <link rel="stylesheet" href="css/Global.css">
+        <link rel="stylesheet" href="css/About.css">
         <!-- ===================== Fonts  ==================================== -->
       <!-- Don't do both font methods. Choose one option -->
       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
         <img src="../img/Maggie.jpeg" alt="Maggie May" width="500" height="600"></p>
         <style>
         body {
-          background-image: url('../Marielle/Photos/Pet%20sticks.jpg');
+          background-image: url('../img/Pet%20sticks.jpg');
         }
         </style>
     </body>

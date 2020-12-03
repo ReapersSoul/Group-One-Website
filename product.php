@@ -13,11 +13,11 @@
     <link rel="shortcut icon" href="favicon.ico"/>
 
     <!--  =================== Bootstrap core CSS =========================== -->
-    <link href="../styles/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- ===================== Custom styles for this template ============ -->
-    <link href="../Global.css" rel="stylesheet">
-    <link href="../Product.css" rel="stylesheet">
+    <link href="css/Global.css" rel="stylesheet">
+    <link href="css/Product.css" rel="stylesheet">
 
 
     <!-- ===================== Fonts  ==================================== -->
