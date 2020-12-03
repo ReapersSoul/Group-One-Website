@@ -42,6 +42,7 @@ Minimal filling for less mess around the house.
 Perfect for a game of fetch or as a comfort toy for your furry friend.
 Squeaks to help entice play for extra excitement.
 Available in two different sizes: Small and Medium, so you can pick the perfect size for your pup."
+            ?>
             </main>
            
             
