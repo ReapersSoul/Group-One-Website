@@ -34,27 +34,18 @@
 
 
   </head>
-  <body class="bdy">
+    <body class="bdy">
       <!-- ==========================  TOP MENU =========================== -->
       <header>
-        <div class="col header fullWidth">
-            <div href="../Index.html" class="title">Pet Palace.</div>
-            <nav class="row fullWidth linkCont" id="navbar">
-                <a href="../Index.html" class="link">Home</a>
-                <a href="../Marielle/Product.html" class="link">Shop</a>
-                <a href="../Trevor/Login.html" id="Login" class="link">Login</a>
-                <a href="../Trevor/Register.html" id="Register" class="link">Register</a>
-                <a href="../Marielle/About.html" class="link">About Us</a>
-                <a href="../Carter/Contact.html" class="link">Contact Us</a>
-                <a href="../Dakota/Team.html" class="link">Team</a>
-            </nav>
-        </div>
-    </header>
+      <!--Link to Header-->
+        <?php include 'ssi/Header.ssi'; ?>
+          
+        </header>
 
 
        <!-- ==========================  MAIN CONTENT ====================== -->
-       <main>
-       <!-- ==========================  JUMBOTRON ====================== -->
+<!-- ==========================  JUMBOTRON ====================== -->
+        <main> 
        <!-- Main jumbotron for a primary marketing message or call to action -->
           <div class="jumbotron">
             <div class="container">
@@ -158,56 +149,14 @@
                 </div>
              </div>
             </div>
-            <hr> <!-- /container -->
-        </main>
+            </div>
+              
+            <hr> <!-- /container --> 
+         </main>
+      
     </body>
-    <!-- ==========================  FOOTER ============================= -->
-
-            <!-- ==========================  JAVASCRIPTS ========================= -->
-            <!-- ========================== Custom =============================== -->
-
-            <!-- ========================== JQuery, Popper, Bootstrap JS ========= -->
-
-             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-
-             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-      <!-- jquery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <!-- bootstrap -->
-      <script src="../js/bootstrap.js"></script>
-      <!-- ours -->
-      <script src="../Global.js"></script>
-      <!-- popper and tippy -->
-      <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
-      <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
-
-      <script>
-        // With the above scripts loaded, you can call `tippy()` with a CSS
-        // selector and a `content` prop:
-        tippy('#Login', {
-          content: '<div id="invalid" class="Invalid"></div><form class="" action="../Trevor/Login.php" method="post"><label for="Username">Username:</label><br><input type="text" name="Username" ><br><label for="Password">Password:</label><br><input type="password" name="Password" value=""><br><div class="row"><input type="submit" value="Login"></div></form>',
-          allowHTML: true,
-          interactive: true,
-        });
-
-        tippy('#Register', {
-          content: '<div id="invalid" class="Invalid"></div><form class="" action="../Trevor/Register.php" method="post"><label for="Username">Username:</label><br><input type="text" name="Username" ><br><label for="Password">Password:</label><br><input type="password" name="Password" value=""><br><div class="row"><input type="submit" value="Register"></div></form>',
-          allowHTML: true,
-          interactive: true,
-        });
-      </script>
-
-      <script type="text/javascript">
-          if (getCookie("InvalidLogin")=="true") {
-              $('#invalid').append('Invalid Login!');
-              setCookie("InvalidLogin","");
-          }
-
-          if (getCookie("Username")!="") {
-              $('#navbar').append('<a href="UserPage.html" class="link">'+getCookie("Username")+'</a>');
-          }
-      </script>
-  </footer>
+    
+        <!-- Link to footer-->
+   <?php include 'ssi/Footer.ssi'; ?>
+      
 </html>
