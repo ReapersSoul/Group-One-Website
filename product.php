@@ -115,7 +115,7 @@
                             The KONG Cozies are cute, soft and cuddly plush toys made with an extra layer of material, so they’re extra tough.
                         </p>
                         <p>
-                            <a href="../Group-One-Website/sale.php" class="btn btn-primary" role="button">Buy Now</a>
+                            <a href="../sale.php" class="btn btn-primary" role="button">Buy Now</a>
                         </p>
                     </div>
                 </div>
