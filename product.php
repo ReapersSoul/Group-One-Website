@@ -17,7 +17,7 @@
 
     <!-- ===================== Custom styles for this template ============ -->
     <link href="../Global.css" rel="stylesheet">
-    <link href="Product.css" rel="stylesheet">
+    <link href="../Product.css" rel="stylesheet">
 
 
     <!-- ===================== Fonts  ==================================== -->
