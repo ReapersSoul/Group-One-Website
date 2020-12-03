@@ -9,8 +9,8 @@
     <meta name="description" content="Pet Planet's welcome page for those that log into the website.  Can only be accessed if you log in through the website.">
     <meta name="keywords" content="Member, Login, Menu, Pet Planet, Group 1 Project">
 
-    <!-- Title of the Page -->
-    <title>Hello firstName!</title>
+    <!-- Title of the Page (I want to display the username here so badly... -->
+    <title>Hello User!</title>
     <!-- bootstrap -->
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -34,10 +34,10 @@
             <div class="col fullHeight">
                 <!-- Test the user to be sure they can get in -->
                 <?php 
-                    /* IF memberSessionVariable != TRUE
-                            GOTO login.php;
-                        ELSE
-                            echo '<h2>Hello firstName lastName, it's nice to see you again! '</h2>';*/
+                    if $_COOKIE[$cookie_InvalidLogin]
+                        header('Location: ./login.php');
+                    else
+                        echo "<h2>Hello " . $_COOKIE[$cookie_Username] . ", it's nice to see you again! </h2>";
                 ?>
                 <br>
                 <p> So, what brings you to Pet Planet today? </p>
