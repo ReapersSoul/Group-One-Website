@@ -7,9 +7,9 @@
         <meta name="keywords" content="">
         <meta name="author" content="Trevor Ducharme">
         <meta name="generator" content="Atom">
-        <title>Store Name</title>
+        <title>Pet Planet</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 
         <!--  =================== Insert the Favicon =========================== -->
         <link rel="shortcut icon" href="favicon.ico"/>
@@ -29,7 +29,9 @@
                     <input type="text" name="Username" ><br>
                     <label for="Password">Password:</label><br>
                     <input type="password" name="Password" value=""><br>
-                    <div class="row"><input type="submit" value="Register"></div>
+                    <label for="Confirm Password">Confirm Password:</label><br>
+                    <input type="password" name="CnfPassword" value=""><br>
+                    <input type="submit" value="Register" onclick="alert('You have been registered!')">
                 </form>
             </div>
         </div>

@@ -29,9 +29,20 @@
             $('#invalid').append('Invalid Login!');
             setCookie("InvalidLogin","");
         }
+        
 
         if (getCookie("Username")!="") {
             $('#navbar').append('<a href="member.php" class="link">'+getCookie("Username")+'</a>');
         }
     </script>
+    <script type="text/javascript">
+    
+        if (getCookie("InvalidRegister")=="true") {
+            $('#invalid').append('Your passwords didnt match!');
+            setCookie("InvalidLogin","");
+        }
+        
+    </script>
+    
+    
 </footer>
