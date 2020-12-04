@@ -17,6 +17,7 @@
 
     <!-- ===================== Custom styles for this template ============ -->
     <link href="css/Global.css" rel="stylesheet">
+    <link href="css/Sale.css" rel="stylesheet">
    
       
       <!-- ===================== Fonts  ==================================== -->
@@ -31,9 +32,42 @@
             <?php include 'ssi/Header.ssi'; ?>
             </header>
     <main>
-       
+         <?php
+      print "<h1>Marvin the Moose</h1> "
+          ?>
+        
+        <h2><img src="../img/Marvin Moose.png" alt="Marvin Moose" width="300" height="300"></h2>
+        
+        <?php
+    print "<h2>$4.99</h2>"
+          ?>
+        <?php
+    print "<p>The KONG Cozies are cute, soft and cuddly plush toys made with an extra layer of material, so they’re extra tough. Cozies are perfect for a game of fetch or as a comfort toy for your furry friend. Grab one of the 10 amazingly cute Cozie characters for your dog and we know your dog will love you for it</p>"
+          ?>
+        <?php
+    print "<h3>Key Benefits</h3>"
+          ?>
+        <?php
+    print "<p>Soft and cuddly plush toys made with an extra layer of material, so they’re extra tough.</p>"
+          ?>
+        <?php
+    print "<p>Minimal filling for less mess around the house.</p>"
+          ?>
+        <?php
+    print "<p>Perfect for a game of fetch or as a comfort toy for your furry friend.</p>"
+          ?>
+        <?php
+    print "<p>Squeaks to help entice play for extra excitement.</p>"
+          ?>
+        <?php
+    print "<p>Available in two different sizes: Small and Medium, so you can pick the perfect size for your pup</p>"
+          ?>
+     
+        
+
             </main>
            
+            
             
         
             

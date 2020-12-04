@@ -1,0 +1,94 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    color: var(--white);
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.header{
+    background-color: var(--maroon);
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+.fullHeight{
+    height: 80vh;
+}
+
+.linkCont{
+    background-color: var(--maroonLight);
+}
+
+input[type=submit]{
+    background-color: var(--maroon);
+    color: var(--white);
+    border-color: var(--maroonLight);
+    border-radius: 5px;
+    margin-top:  20px;
+}
+
+.link{
+    color: var(--white);
+    font-size: 27px;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.link:hover{
+    color: var(--green);
+}
+
+.Invalid{
+    color: var(--red);
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.topmarg{
+    margin-top: 200px;
+}
+
+h1{color: orange;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 70px
+}
+
+h2{color:red;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 24px;
+}
+
+h3{color: red;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+p{color: black;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 16px; 
+}
+
+body{
+    background-color: lightblue;
+}     
