@@ -31,27 +31,34 @@
 
 <body>
         <div class="row">
-            <div class="col fullHeight">
+            <div class="col fullHeight"> <!-- I feel like I want to insert an image here as a background -->
                 <!-- Test the user to be sure they can get in -->
                 <?php
                     //Processing to turn InvalidLogin/InvalidRegister into a boolean so the if else statement runs smoother
-
-                        //// NOTE: FROM Trevor: use this setcookie("Username", $_POST["Username"],time() + 3600); and this
-                        //// NOTE: also check https://www.php.net/manual/en/function.setcookie.php example 3 for more info
-
-                        if ($_COOKIE["InvalidLogin"] == "true"){ //This piece doesn't want to work, but why does InvalidLogin refuse to be true?
-                            $invalid = true;
-                            $newUser = false;}
-                        else if ($_COOKIE["InvalidLogin"] == "false")
-                            $invalid = false;
-                        else if ($_COOKIE["InvalidRegister"] == "true"){
-                            $invalid = true;
-                            $newUser = true;}
-                        else if ($_COOKIE["InvalidRegister"] == "false")
-                            $invalid = false;
-                        else
+                
+                    /* In case if you need to manually set some values in order to test if the code works, 
+                        Declare a variable holding a value you want to recieve from a cookie ($boolean = "true"; or $boolean = "false";)
+                        Assign said variable to either InvalidLogin or InvalidRegister (setcookie("InvalidItem", $boolean, time() + 3600);) 
+                    You many need to do this with Username as well if you want to remain on the member page.*/
+                
+                    //For the best results, please wait fifteen minutes after registering before logging in and vice versa.
+                        if (isset($_COOKIE["InvalidLogin"])){
+                            if ($_COOKIE["InvalidLogin"] == "true"){ //This piece doesn't want to work, but why does InvalidLogin refuse to be true?
+                                $invalid = true;
+                                $newUser = false;}
+                            else if ($_COOKIE["InvalidLogin"] == "false")
+                                $invalid = false;}
+                        elseif (isset($_COOKIE["InvalidRegister"])){
+                            if ($_COOKIE["InvalidRegister"] == "true"){
+                                $invalid = true;
+                                $newUser = true;}
+                            else if ($_COOKIE["InvalidRegister"] == "false")
+                                $invalid = false;}
+                        
+                        //Checks to be sure there are values in Username and InvalidLogin/InvalidRegister
+                        if (!isset($invalid) || !isset($_COOKIE["Username"]))
                             header('Location: ./error.php');
-
+                        
                     //This is the actual testing
                     if ($invalid){
                         if ($newUser)
@@ -59,12 +66,11 @@
                         else
                             header('Location: ./login.php');}
                     else
-                        echo "<h2>Hello " . $_COOKIE["Username"] . ", it's nice to see you again! </h2>";
+                        echo "<h1 style=color:firebrick>Hello " . $_COOKIE["Username"] . ", it's nice to see you again! </h1>";
                 ?>
                 <br>
-                <p> So, what brings you to Pet Planet today? </p>
+                <h5 style=color:indianred> So, what brings you to Pet Planet today? </h5>
                 <button onclick="document.location='product.php'" class="button">I'm here to view the avalible products</button>
-                <button onclick="document.location='sale.php'" class="button">I'm here to go shopping</button>
                 <button onclick="document.location='about.php'" class="button">I want to learn about Pet Planet</button>
                 <button onclick="document.location='contact.php'" class="button">I want to reach out to Pet Planet</button>
             </div>

@@ -31,39 +31,32 @@
 
 <body>
    <div class="row">
-    <div class="col">
-        <hr>
-        <hr>
-        <h1>Meet the Designer Team of Pet Planet!</h1>
-        <hr>
-       </div>
+        <div class="col">
+            <hr>
+            <hr>
+            <h1>Meet the Designer Team of Pet Planet!</h1>
+            <hr>
+        </div>
     </div>
-    <!-- Should I include pictures with the designer profiles? -->
-    <div class="row">
+    <div class="row"> <!-- I'm going to attempt to insert an image here as a background -->
         <div class="col-md-8">
             <h3>Trevor Ducharme</h3>
             <br>
             <p>Trevor Ducharme is the head of the team and the creator of the Register, Login, and Login Processing pages of this website.  He's also responsible for designing the menu in the header and the footer.</p>
             <hr>
         </div>
-    </div>
-    <div class="row">
         <div class="col-md-8">
             <h3>Marielle Bender</h3>
             <br>
             <p>Marielle Bender created the About, Product, and Sales pages of this website.</p>
             <hr>
         </div>
-    </div>
-    <div class="row">
         <div class="col-md-8">
             <h3>Carter Brown</h3>
             <br>
             <p>Carter Brown created the Home, Contact, and Registration Processing pages of this website.</p>
             <hr>
         </div>
-    </div>
-    <div class="row">
         <div class="col-md-8">
             <h3>Dakota Gray</h3>
             <br>
