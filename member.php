@@ -33,11 +33,29 @@
         <div class="row">
             <div class="col fullHeight">
                 <!-- Test the user to be sure they can get in -->
-                <?php 
-                    if $_COOKIE[$cookie_InvalidLogin]
-                        header('Location: ./login.php');
+                <?php
+                    //Processing to turn InvalidLogin/InvalidRegister into a boolean so the if else statement runs smoother
+                        if ($_COOKIE["InvalidLogin"] == "true"){ //This piece doesn't want to work, but why does InvalidLogin refuse to be true?
+                            $invalid = true;
+                            $newUser = false;}
+                        else if ($_COOKIE["InvalidLogin"] == "false")
+                            $invalid = false;
+                        else if ($_COOKIE["InvalidRegister"] == "true"){
+                            $invalid = true;
+                            $newUser = true;}
+                        else if ($_COOKIE["InvalidRegister"] == "false")
+                            $invalid = false;
+                        else
+                            header('Location: ./error.php');
+            
+                    //This is the actual testing
+                    if ($invalid){
+                        if ($newUser)
+                            header('Location: ./register.php');
+                        else
+                            header('Location: ./login.php');}
                     else
-                        echo "<h2>Hello " . $_COOKIE[$cookie_Username] . ", it's nice to see you again! </h2>";
+                        echo "<h2>Hello " . $_COOKIE["Username"] . ", it's nice to see you again! </h2>";
                 ?>
                 <br>
                 <p> So, what brings you to Pet Planet today? </p>
