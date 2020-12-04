@@ -35,6 +35,10 @@
                 <!-- Test the user to be sure they can get in -->
                 <?php
                     //Processing to turn InvalidLogin/InvalidRegister into a boolean so the if else statement runs smoother
+
+                        //// NOTE: FROM Trevor: use this setcookie("Username", $_POST["Username"],time() + 3600); and this
+                        //// NOTE: also check https://www.php.net/manual/en/function.setcookie.php example 3 for more info
+
                         if ($_COOKIE["InvalidLogin"] == "true"){ //This piece doesn't want to work, but why does InvalidLogin refuse to be true?
                             $invalid = true;
                             $newUser = false;}
@@ -47,7 +51,7 @@
                             $invalid = false;
                         else
                             header('Location: ./error.php');
-            
+
                     //This is the actual testing
                     if ($invalid){
                         if ($newUser)
