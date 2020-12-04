@@ -82,6 +82,11 @@ h3{color: red;
     font-size: 30px;
 }
 
+form{font-family: 'Oswald', sans-serif;
+    padding-left: 50px;
+    
+}
+
 p{color: black;
     font-family: 'Oswald', sans-serif;
     padding-left: 50px;
@@ -91,4 +96,5 @@ p{color: black;
 
 body{
     background-color: lightblue;
-}     
+}    
+

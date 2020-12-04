@@ -62,8 +62,21 @@
         <?php
     print "<p>Available in two different sizes: Small and Medium, so you can pick the perfect size for your pup</p>"
           ?>
-     
+        <?php
+    print "<h3>Shipping Information</h3>"
+          ?>
         
+        <form action="Shipping.php" method="post">
+        Name: <input type="text" name="name"><br>
+        Street Address: <input type="text" name="address"><br>
+        City: <input type="text" name="city"><br>
+        State: <input type="text" name="state"><br>
+        Zip Code: <input type="text" name="zip"><br>
+        Credit Card Number: <input type="number" name="credit card number"><br>
+        Expiration Date: <input type="date" name="expiration date"><br>
+        CCV Number: <input type="number" name="CCV"><br>
+        <input type="submit">
+        </form>
 
             </main>
            
