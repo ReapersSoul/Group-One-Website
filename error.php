@@ -31,8 +31,8 @@
 
 <body>
         <div class="row">
-            <div class="col fullHeight">
-                <!-- The text display might not be the best, but I tried, I bet it would look better if I found out how to implement a scroll bar -->
+            <div class="col fullHeight">                
+                <!-- Text that appears on the page -->
                 <h1>OH NO!</h1>
                 <h2 style=color:indianred>An Error has Occured While Looking for Your Page</h2>
                 <hr>
@@ -47,6 +47,7 @@
             <button onclick="document.location='index.php'" class="button">Home</button>
             </div>
         </div>
+    
 </body>
 
     <!-- Link to Footer.ssi -->

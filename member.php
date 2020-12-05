@@ -9,14 +9,21 @@
     <meta name="description" content="Pet Planet's welcome page for those that log into the website.  Can only be accessed if you log in through the website.">
     <meta name="keywords" content="Member, Login, Menu, Pet Planet, Group 1 Project">
 
-    <!-- Title of the Page (I want to display the username here so badly... -->
-    <title>Hello User!</title>
+    <!-- Title of the Page -->
+    <title>Hello 
+        <?php //The following code calls out the user in the title page.  The final result should be "Hello [User]!" 
+            if (isset($_COOKIE["Username"]))
+                echo $_COOKIE["Username"] . "!";
+            else
+                header('Location: ./error.php');
+        ?>
+    </title>
     <!-- bootstrap -->
         <link rel="stylesheet" href="../css/bootstrap.css">
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <!-- ours -->
         <link rel="stylesheet" href="css/Global.css">
-        <link rel="stylesheet" href="css/TeamError.css"> <!-- May have to be replaced with a different stylesheet  -->
+        <link rel="stylesheet" href="css/TeamError.css">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?     family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -31,7 +38,7 @@
 
 <body>
         <div class="row">
-            <div class="col fullHeight"> <!-- I feel like I want to insert an image here as a background -->
+            <div class="col fullHeight">
                 <!-- Test the user to be sure they can get in -->
                 <?php
                     //Processing to turn InvalidLogin/InvalidRegister into a boolean so the if else statement runs smoother
@@ -55,8 +62,8 @@
                             else if ($_COOKIE["InvalidRegister"] == "false")
                                 $invalid = false;}
                         
-                        //Checks to be sure there are values in Username and InvalidLogin/InvalidRegister
-                        if (!isset($invalid) || !isset($_COOKIE["Username"]))
+                        //Check to be sure there is a value in InvalidLogin/InvalidRegister
+                        if (!isset($invalid))
                             header('Location: ./error.php');
                         
                     //This is the actual testing

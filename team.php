@@ -38,7 +38,7 @@
             <hr>
         </div>
     </div>
-    <div class="row"> <!-- I'm going to attempt to insert an image here as a background -->
+    <div class="row"> <!-- The following is a description of what everyone did for the project -->
         <div class="col-md-8">
             <h3>Trevor Ducharme</h3>
             <br>
@@ -48,7 +48,7 @@
         <div class="col-md-8">
             <h3>Marielle Bender</h3>
             <br>
-            <p>Marielle Bender created the About, Product, and Sales pages of this website.</p>
+            <p>Marielle Bender created the About, Product, and Sales pages of this website.  She's also responsible for aquiring most of the images that the website uses.</p>
             <hr>
         </div>
         <div class="col-md-8">
